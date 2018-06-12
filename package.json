@@ -9,10 +9,13 @@
   },
   "devDependencies": {
     "expect": "^23.1.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5"
   },
   "scripts": {
-    "test": "mocha"
+    "start": "node server/server.js",
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "repository": {
     "type": "git",
